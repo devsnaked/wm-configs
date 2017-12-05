@@ -148,7 +148,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+l exec --no-startup-id i3lock --color 000000
+bindsym $mod+l exec --no-startup-id i3lock --color 3d3d3d
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
 bindsym $mod+e exec thunar
