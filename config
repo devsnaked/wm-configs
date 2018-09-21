@@ -147,12 +147,13 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+
 bindsym $mod+l exec --no-startup-id i3lock --color 3d3d3d
 exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec --no-startup-id synapse
-bindsym $mod+e exec thunar
+bindsym $mod+e exec nautilus
 bindsym Print exec gnome-screenshot -i
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -161,8 +162,8 @@ bar {
         status_command i3status
 	position top
 }
-
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id feh --bg-scale  ~/Imagens/Wallpaper/wallpaper.jpg
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
-client.focused          #3d3d3d #3d3d3d #ffffff #2e9ef4   #cccccc
+client.focused	 #4c7899 #285577 #ffffff #2e9ef4 
